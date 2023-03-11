@@ -1,0 +1,36 @@
+.menu_wrapper {
+  @apply w-[250px] h-screen bg-white absolute top-0  transition-all p-8 pt-32;
+  box-shadow: -22px 0px 23px -14px rgba(0, 0, 0, 0.53);
+  -webkit-box-shadow: -22px 0px 23px -14px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: -22px 0px 23px -14px rgba(0, 0, 0, 0.53);
+
+  ul {
+    li {
+      h3 {
+        @apply font-bold text-primary text-sm uppercase;
+      }
+
+      ul {
+        @apply p-4;
+
+        li {
+          a {
+            @apply text-sm font-light transition-all;
+
+            &:hover {
+              @apply text-primary font-semibold;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.menu_active {
+  @apply right-0;
+}
+
+.menu_inactive {
+  @apply -right-72;
+}

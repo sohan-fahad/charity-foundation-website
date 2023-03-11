@@ -1,0 +1,6 @@
+.header {
+  @apply relative w-full overflow-hidden bg-cover bg-center bg-no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.49), rgba(0, 0, 0, 0.49)),
+    url("../../../assets/images/hero-img.png");
+  background-attachment: fixed;
+}

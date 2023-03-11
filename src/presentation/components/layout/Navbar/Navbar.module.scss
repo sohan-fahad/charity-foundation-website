@@ -1,0 +1,30 @@
+.navbar {
+  @apply h-16 w-full absolute left-0 top-0;
+
+  .wrapper {
+    @apply container mx-auto flex justify-between items-center h-full px-2;
+
+    .navbar_toggle_btn {
+      @apply flex flex-col justify-center relative z-30;
+      .icon_bar {
+        @apply w-8 h-1 rounded-full bg-primary mb-[5px];
+        transition: all ease-in-out 0.2s;
+      }
+      .icon_bar_active {
+        @apply w-8 h-1 rounded-full bg-primary mb-[5px];
+        transition: all ease-in-out 0.2s;
+        &:nth-child(2) {
+          @apply hidden;
+        }
+        &:first-child {
+          @apply rotate-45;
+          transform-origin: 10px 50%;
+        }
+        &:last-child {
+          @apply -rotate-45;
+          transform-origin: 10px 50%;
+        }
+      }
+    }
+  }
+}
