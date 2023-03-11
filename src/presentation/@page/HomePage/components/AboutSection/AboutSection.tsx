@@ -1,17 +1,26 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./AboutSection.module.scss";
-import about_img from "../../../../../assets/images/about-img.png";
-import about_img_right from "../../../../../assets/images/about-img1.png";
+import about_img from "../../../../../assets/images/about-img.webp";
+import about_img_right from "../../../../../assets/images/about-img1.webp";
 import about_us from "../../../../../assets/images/about-us.svg";
 
 const AboutSection = () => {
   return (
     <section className={styles.about}>
-      <div className={styles.left}>
+      <div
+        className={styles.left}
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+      >
         <Image src={about_img} alt="about image" />
       </div>
-      <div className={styles.right}>
+      <div
+        className={styles.right}
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-delay="100"
+      >
         <Image src={about_us} alt="about us" />
         <h2>Every child deserves nature.</h2>
 
@@ -26,7 +35,12 @@ const AboutSection = () => {
             Foundation matches every penny you give. So together, we can do
             double the good.
           </p>
-          <div className={styles.right_content_img}>
+          <div
+            className={styles.right_content_img}
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="150"
+          >
             <div className={styles.overlay}>
               <h3>Learn More</h3>
             </div>

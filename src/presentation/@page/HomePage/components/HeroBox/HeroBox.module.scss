@@ -1,5 +1,5 @@
 .herobox {
-  @apply container mx-auto w-full h-screen flex flex-col justify-center items-start;
+  @apply container mx-auto w-full h-screen flex flex-col justify-center items-start overflow-hidden;
 
   h1 {
     @apply text-center lg:text-left text-3xl sm:text-5xl lg:text-6xl mb-12 font-black w-full lg:w-1/2 text-white sm:leading-[70px];
