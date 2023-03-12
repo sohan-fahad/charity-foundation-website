@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./HomePage.module.scss";
 import HeroBox from "./components/HeroBox/HeroBox";
 import AboutSection from "./components/AboutSection/AboutSection";
+import ImpactSection from "./components/ImpactSection/ImpactSection";
 
 const HomePage = () => {
   return (
@@ -13,6 +14,7 @@ const HomePage = () => {
       </header>
       <main>
         <AboutSection />
+        <ImpactSection />
       </main>
     </>
   );

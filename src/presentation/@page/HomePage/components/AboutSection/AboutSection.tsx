@@ -19,7 +19,7 @@ const AboutSection = () => {
         className={styles.right}
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
-        data-aos-delay="100"
+        data-aos-delay="50"
       >
         <Image src={about_us} alt="about us" />
         <h2>Every child deserves nature.</h2>
@@ -39,7 +39,7 @@ const AboutSection = () => {
             className={styles.right_content_img}
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
-            data-aos-delay="150"
+            data-aos-delay="100"
           >
             <div className={styles.overlay}>
               <h3>Learn More</h3>
