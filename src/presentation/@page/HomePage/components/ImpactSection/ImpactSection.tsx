@@ -4,7 +4,11 @@ import styles from "./ImpactSection.module.scss";
 
 const ImpactSection = () => {
   return (
-    <section className={styles.wrapper}>
+    <section
+      className={styles.wrapper}
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+    >
       <div className={styles.titleWrapper}>
         <div className={styles.line}></div>
         <div className="flex justify-center">
