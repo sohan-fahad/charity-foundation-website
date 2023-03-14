@@ -1,0 +1,25 @@
+.team {
+  @apply mb-12 sm:mb-24 bg-primary py-6 sm:py-12 overflow-hidden;
+
+  .team_info_wrapper {
+    @apply relative;
+
+    &:hover {
+      .info_overlay {
+        @apply top-0;
+      }
+    }
+
+    .info_overlay {
+      @apply h-full w-full absolute bg-black top-0 lg:top-96 left-0 bg-opacity-50 flex flex-col justify-center items-center transition-all;
+
+      h4 {
+        @apply text-white text-base sm:text-2xl font-bold;
+      }
+
+      p {
+        @apply text-white text-xs sm:text-base;
+      }
+    }
+  }
+}

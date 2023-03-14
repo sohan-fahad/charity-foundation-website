@@ -7,6 +7,7 @@ import ImpactSection from "./components/ImpactSection/ImpactSection";
 import NewsSection from "./components/NewsSection/NewsSection";
 import FooterSection from "./components/FooterSection/FooterSection";
 import Head from "next/head";
+import TeamSection from "./components/TeamSection/TeamSection";
 
 const HomePage = () => {
   return (
@@ -27,6 +28,7 @@ const HomePage = () => {
       <main className={styles.main}>
         <AboutSection />
         <ImpactSection />
+        <TeamSection />
         <NewsSection />
       </main>
       <FooterSection />
