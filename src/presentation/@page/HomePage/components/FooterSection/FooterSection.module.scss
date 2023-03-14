@@ -1,0 +1,37 @@
+.footer {
+  @apply py-6 sm:py-12 bg-primary rounded-t-[50px] sm:rounded-t-[100px];
+
+  .footer_wrapper {
+    @apply container;
+
+    .footer_logo {
+      @apply w-full flex justify-center;
+      h1 {
+        @apply text-4xl font-black text-white;
+      }
+    }
+
+    .footer_menu {
+      @apply w-full flex justify-center mt-5;
+      ul {
+        @apply flex;
+
+        li {
+          @apply p-1 sm:p-2;
+
+          a {
+            @apply font-medium transition-all uppercase text-white hover:font-bold text-sm sm:text-base;
+          }
+        }
+      }
+    }
+
+    .info {
+      @apply text-center text-white text-sm sm:text-base mt-4;
+    }
+
+    .copyright_info {
+      @apply mt-10 text-center text-white uppercase font-medium text-sm sm:text-base;
+    }
+  }
+}
